@@ -71,31 +71,8 @@ bool checkList(int arrInt[], string arrString[], int n, int key, string myname) 
 
 		for (int i = 9; i > 0; i--)
 		{
-			
-			//myarray[j] = myarray[j + 1];
-
-
 			arrInt[i] = arrInt[i - 1];
 			arrString[i] = arrString[i - 1];
-			/*
-			if (i == 0)
-			{
-				temporary = arrInt[i];
-				temporary2 = arrString[i];
-				arrInt[i + 1] = temporary3;
-				arrString[i + 1] = temporary4;
-			}
-			else
-			{
-
-				temporary = arrInt[i];
-				temporary2 = arrString[i];
-				arrInt[i] = temporary;
-				arrString[i] = temporary2;
-				temporary3 = arrInt[i + 1];
-				temporary4 = arrString[i + 1];
-			}
-				*/
 		}
 
 		arrInt[0] = k;
@@ -163,8 +140,6 @@ int main()
 	cin >> myname;
 	cout << "Enter a score: " << endl;
 	cin >> key;
-	//myname = "Tester";
-	//key = 300;
 
 	cout << endl;
 
